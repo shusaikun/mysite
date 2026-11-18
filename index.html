@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACミラン紹介</title>
+  <style>
+    :root { --red: #FB090B; --black: #111; --white: #fff; --gray: #f3f3f3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Hiragino Sans", "Yu Gothic", sans-serif; color: var(--black); line-height: 1.8; background: var(--white); }
+    header.hero {
+      background: repeating-linear-gradient(90deg, var(--red) 0 48px, var(--black) 48px 96px);
+      color: var(--white); text-align: center; padding: 0;
+    }
+    .hero-inner { background: rgba(0,0,0,.62); padding: 90px 16px; }
+    .hero h1 { margin: 0; font-size: clamp(2.2rem, 8vw, 4.2rem); letter-spacing: .08em; }
+    .hero p { margin: 8px 0 0; font-size: 1.1rem; }
+    nav { background: var(--black); position: sticky; top: 0; z-index: 10; text-align: center; }
+    nav a { color: var(--white); text-decoration: none; display: inline-block; padding: 12px 14px; font-size: .95rem; }
+    nav a:hover { color: var(--red); }
+    main { max-width: 860px; margin: 0 auto; padding: 0 16px 40px; }
+    section { padding-top: 40px; }
+    h2 { border-left: 8px solid var(--red); padding-left: 12px; font-size: 1.6rem; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 20px 0; }
+    .stat { background: var(--black); color: var(--white); padding: 18px 8px; text-align: center; border-bottom: 5px solid var(--red); }
+    .stat b { display: block; font-size: 2rem; color: var(--red); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid #ddd; text-align: left; }
+    th { width: 9em; background: var(--gray); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .card { background: var(--gray); padding: 14px 16px; border-top: 4px solid var(--red); }
+    .photo { aspect-ratio: 4 / 5; background: #ddd repeating-linear-gradient(90deg, #e9e9e9 0 20px, #dcdcdc 20px 40px); margin-bottom: 10px; overflow: hidden; }
+    .photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+    .card h3 { margin: 0 0 4px; }
+    .card small { color: #666; }
+    ol.timeline { list-style: none; padding: 0; border-left: 3px solid var(--red); margin-left: 8px; }
+    ol.timeline li { padding: 0 0 14px 18px; position: relative; }
+    ol.timeline li::before { content: ""; position: absolute; left: -9px; top: 10px; width: 15px; height: 15px; background: var(--black); border: 3px solid var(--red); border-radius: 50%; }
+    footer { background: var(--black); color: #ccc; text-align: center; padding: 24px 16px; font-size: .85rem; }
+    footer a { color: var(--red); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>AC MILAN</h1>
+      <p style="font-size: 0.8rem; color: #bbb;">最終更新：2026 年 11 月 18 日</p>
+      <p>ロッソネリ（赤と黒）── イタリアが誇る名門クラブ</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">クラブ概要</a>
+    <a href="#history">歴史</a>
+    <a href="#legends">レジェンド</a>
+    <a href="#team">現在のチーム</a>
+    <a href="#derby">ダービー</a>
+    <a href="#stadium">スタジアム</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>クラブ概要</h2>
+      <p>ACミラン（Associazione Calcio Milan）は、イタリア北部の大都市ミラノを本拠地とするプロサッカークラブです。赤と黒の縦縞のユニフォームから「ロッソネリ」、悪魔の愛称から「イル・ディアボロ（悪魔）」とも呼ばれます。</p>
+      <div class="stats">
+        <div class="stat"><b>1899</b>創設年</div>
+        <div class="stat"><b>19</b>セリエA優勝</div>
+        <div class="stat"><b>7</b>欧州制覇<br>（チャンピオンズカップ／CL）</div>
+      </div>
+      <table>
+        <tr><th>正式名称</th><td>Associazione Calcio Milan</td></tr>
+        <tr><th>本拠地</th><td>ミラノ（イタリア）</td></tr>
+        <tr><th>チームカラー</th><td>赤・黒</td></tr>
+        <tr><th>ホームスタジアム</th><td>サン・シーロ（ジュゼッペ・メアッツァ）</td></tr>
+        <tr><th>リーグ</th><td>セリエA</td></tr>
+      </table>
+    </section>
+
+    <section id="history">
+      <h2>歴史</h2>
+      <ol class="timeline">
+        <li><b>1899年</b>　イングランド人らによって「ミラン・フットボール・アンド・クリケット・クラブ」として創設。</li>
+        <li><b>1960年代</b>　1963年、イタリア勢として初めて欧州チャンピオンズカップを制覇。1969年にも優勝。</li>
+        <li><b>1980年代後半〜90年代</b>　アリゴ・サッキ監督、ファビオ・カペッロ監督のもと黄金期。ファン・バステン、フリット、ライカールトの「オランダ トリオ」が活躍し、1989・1990年に連覇。</li>
+        <li><b>2000年代</b>　アンチェロッティ監督のもと、2003年・2007年にチャンピオンズリーグ制覇。</li>
+        <li><b>2010年代〜</b>　低迷期を経て再建。2021-22シーズンに11年ぶりのセリエA優勝（19回目）を果たす。</li>
+      </ol>
+    </section>
+
+    <section id="legends">
+      <h2>レジェンド</h2>
+      <div class="cards">
+        <div class="card"><div class="photo"><img src="images/maldini.jpg" alt="パオロ・マルディーニ" onerror="this.remove()"></div><h3>パオロ・マルディーニ</h3><small>DF</small><p>ミラン一筋で25年プレー。クラブの象徴的存在。</p></div>
+        <div class="card"><div class="photo"><img src="images/nesta.jpg" alt="アレッサンドロ・ネスタ" onerror="this.remove()"></div><h3>アレッサンドロ・ネスタ</h3><small>DF</small><p>エレガントな守備で知られたセンターバック。2003年・2007年のCL制覇に貢献。</p></div>
+        <div class="card"><div class="photo"><img src="images/vanbasten.jpg" alt="マルコ・ファン・バステン" onerror="this.remove()"></div><h3>マルコ・ファン・バステン</h3><small>FW</small><p>バロンドールを3度受賞した伝説のストライカー。</p></div>
+        <div class="card"><div class="photo"><img src="images/pirlo.jpg" alt="アンドレア・ピルロ" onerror="this.remove()"></div><h3>アンドレア・ピルロ</h3><small>MF</small><p>正確なパスで試合を操った司令塔。</p></div>
+        <div class="card"><div class="photo"><img src="images/kaka.jpg" alt="カカ" onerror="this.remove()"></div><h3>カカ</h3><small>MF</small><p>2007年バロンドール受賞。華麗なドリブルで魅了。</p></div>
+        <div class="card"><div class="photo"><img src="images/shevchenko.jpg" alt="アンドリー・シェフチェンコ" onerror="this.remove()"></div><h3>アンドリー・シェフチェンコ</h3><small>FW</small><p>2004年バロンドール受賞のゴールマシン。</p></div>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>現在のチーム（2026-27シーズン）</h2>
+      <p>2026年11月8日時点で、セリエA 11試合を終えて7勝3分1敗の4位（勝点24）です。</p>
+
+      <h3>監督</h3>
+      <div class="cards">
+        <div class="card"><div class="photo"><img src="images/amorim.png" alt="ルベン・アモリム" onerror="this.remove()"></div><h3>ルベン・アモリム</h3><small>監督（ポルトガル）</small><p>2026年6月に就任。スポルティングCPでポルトガルリーグを2度制し、マンチェスター・ユナイテッドを経てミランへ。3バックの戦術で知られる。</p></div>
+      </div>
+
+      <h3>注目の選手</h3>
+      <div class="cards">
+        <div class="card"><div class="photo"><img src="images/maignan.jpg" alt="マイク・メニャン" onerror="this.remove()"></div><h3>マイク・メニャン</h3><small>GK・16番・キャプテン（フランス）</small><p>2021年にリールから加入。抜群の反射神経と足元の技術を持つ守護神。</p></div>
+        <div class="card"><div class="photo"><img src="images/tomori.jpg" alt="フィカヨ・トモリ" onerror="this.remove()"></div><h3>フィカヨ・トモリ</h3><small>DF・23番（イングランド）</small><p>スピードを武器にするセンターバック。2021-22シーズンのリーグ優勝メンバー。</p></div>
+        <div class="card"><div class="photo"><img src="images/pulisic.jpg" alt="クリスチャン・プリシッチ" onerror="this.remove()"></div><h3>クリスチャン・プリシッチ</h3><small>MF・11番（アメリカ）</small><p>2023年にチェルシーから加入。ドリブルと得点力で攻撃を引っ張る。</p></div>
+      </div>
+
+      <h3>選手一覧</h3>
+      <table>
+        <tr><th>GK</th><td>1 ピエトロ・テッラッチャーノ／16 マイク・メニャン／96 ロレンツォ・トッリアーニ</td></tr>
+        <tr><th>DF</th><td>2 ペルビス・エストゥピニャン／5 コニ・デ・ウィンター／13 サンクン・ディアワラ／23 フィカヨ・トモリ／31 ストラヒニャ・パブロビッチ／33 ダビデ・バルテサーギ／34 マリオ・ヒラ／35 ヴァレリ・ヴラディミロフ／42 フィリッポ・テッラッチャーノ／46 マッテオ・ガッビア</td></tr>
+        <tr><th>MF</th><td>8 ルーベン・ロフタス＝チーク／11 クリスチャン・プリシッチ／12 アドリアン・ラビオ／14 ルカ・モドリッチ／20 オマリ・ハッチンソン／22 ディエゴ・モレイラ／28 クリスティアン・コモット／30 アルドン・ヤシャリ／56 アレクシス・サレマーカーズ／70 アルファジョ・シッセ／80 ユヌス・ムサ</td></tr>
+        <tr><th>FW</th><td>9 ゴンサロ・ラモス／21 サミュエル・チュクウェゼ／73 フランチェスコ・カマルダ</td></tr>
+      </table>
+      <p style="font-size: 0.85rem; color: #666;">選手一覧は AC Milan 公式サイトの掲載内容（2026年11月18日確認）にもとづきます。移籍などで変わることがあります。</p>
+    </section>
+
+    <section id="derby">
+      <h2>ミラノ・ダービー</h2>
+      <p>同じ街を本拠地とするインテルとの対戦は「デルビー・デッラ・マドンニーナ」と呼ばれ、世界屈指の注目カードです。スタジアムは両クラブで共用しており、試合ごとにスタンドが赤黒と青黒に染まります。</p>
+    </section>
+
+    <section id="stadium">
+      <h2>スタジアム：サン・シーロ</h2>
+      <p>正式名称はスタディオ・ジュゼッペ・メアッツァ。約75,000人を収容し、世界で最も有名なサッカー場のひとつです。ミランとインテルが共用しており、ミランのホームゲームでは赤黒の大応援が響き渡ります。</p>
+    </section>
+
+    <section id="sources">
+      <h2>出典</h2>
+      <ul>
+        <li><a href="https://www.acmilan.com/" target="_blank" rel="noopener">AC Milan 公式サイト</a></li>
+        <li><a href="https://ja.wikipedia.org/wiki/ACミラン" target="_blank" rel="noopener">ACミラン - Wikipedia</a></li>
+        <li><a href="https://www.legaseriea.it/" target="_blank" rel="noopener">Lega Serie A 公式サイト</a></li>
+        <li><a href="https://www.uefa.com/" target="_blank" rel="noopener">UEFA 公式サイト</a></li>
+        <li><a href="https://www.acmilan.com/en/teams/men-first-team" target="_blank" rel="noopener">AC Milan 公式サイト「Men's First Team」</a>（選手一覧・監督、2026年11月18日閲覧）</li>
+        <li><a href="https://en.wikipedia.org/wiki/2026%E2%80%9327_AC_Milan_season" target="_blank" rel="noopener">2026–27 AC Milan season - Wikipedia</a>（順位・成績、2026年11月18日閲覧）</li>
+        <li><a href="https://en.wikipedia.org/wiki/Ruben_Amorim" target="_blank" rel="noopener">Ruben Amorim - Wikipedia</a>（監督の経歴、2026年11月18日閲覧）</li>
+      </ul>
+      <h3>写真の出典（Wikimedia Commons）</h3>
+      <ul>
+        <li>パオロ・マルディーニ：Рыбакова Елена（Elena Rybakova）撮影、<a href="https://commons.wikimedia.org/wiki/File:PaoloMaldini_2008.jpg" target="_blank" rel="noopener">PaoloMaldini 2008.jpg</a>（CC BY-SA 3.0、元画像：soccer.ru）</li>
+        <li>アレッサンドロ・ネスタ：goatling 撮影、<a href="https://commons.wikimedia.org/wiki/File:Alessandro_Nesta_2010.jpg" target="_blank" rel="noopener">Alessandro Nesta 2010.jpg</a>（CC BY-SA 2.0）</li>
+        <li>マルコ・ファン・バステン：撮影者不明、<a href="https://commons.wikimedia.org/wiki/File:Marco_van_Basten_1990-1992.jpg" target="_blank" rel="noopener">Marco van Basten 1990-1992.jpg</a>（パブリックドメインとして登録）</li>
+        <li>アンドレア・ピルロ：Roberto Vicario 撮影、<a href="https://commons.wikimedia.org/wiki/File:Andrea_Pirlo.jpg" target="_blank" rel="noopener">Andrea Pirlo.jpg</a>（CC BY-SA 3.0）</li>
+        <li>カカ：gowestphoto 撮影、<a href="https://commons.wikimedia.org/wiki/File:Kaka_of_AC_Milan,_April_19,_2009.jpg" target="_blank" rel="noopener">Kaka of AC Milan, April 19, 2009.jpg</a>（CC BY 2.0）</li>
+        <li>アンドリー・シェフチェンコ：Anastasiya Fedorenko 撮影、<a href="https://commons.wikimedia.org/wiki/File:Andriy_Shevchenko_-_2004_-_AC_Milan_(3).jpg" target="_blank" rel="noopener">Andriy Shevchenko - 2004 - AC Milan (3).jpg</a>（CC BY-SA 3.0）</li>
+        <li>ルベン・アモリム：Agência Lusa 撮影、<a href="https://commons.wikimedia.org/wiki/File:Ruben_Amorim,_January_2024_(cropped).png" target="_blank" rel="noopener">Ruben Amorim, January 2024 (cropped).png</a>（CC BY 3.0、スポルティングCP監督時代）</li>
+        <li>マイク・メニャン：Werner100359 撮影、<a href="https://commons.wikimedia.org/wiki/File:Mike_Maignan_2022_Salzburg_vs_AC_Milan_2022-09-06.jpg" target="_blank" rel="noopener">Mike Maignan 2022 Salzburg vs AC Milan 2022-09-06.jpg</a>（CC BY-SA 4.0）</li>
+        <li>フィカヨ・トモリ：Saggittarius A 撮影、<a href="https://commons.wikimedia.org/wiki/File:Tomori_Milan_2022.jpg" target="_blank" rel="noopener">Tomori Milan 2022.jpg</a>（CC BY-SA 4.0）</li>
+        <li>クリスチャン・プリシッチ：Saggittarius A 撮影、<a href="https://commons.wikimedia.org/wiki/File:Milan_Cagliari_2025_-_Pulisic.jpg" target="_blank" rel="noopener">Milan Cagliari 2025 - Pulisic.jpg</a>（CC BY 4.0）</li>
+      </ul>
+      <p>ライセンス：<a href="https://creativecommons.org/licenses/by/3.0/deed.ja" target="_blank" rel="noopener">CC BY 3.0</a>／<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 3.0</a>／<a href="https://creativecommons.org/licenses/by/2.0/deed.ja" target="_blank" rel="noopener">CC BY 2.0</a>／<a href="https://creativecommons.org/licenses/by-sa/2.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 2.0</a>／<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener">CC BY 4.0</a>／<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>。写真は表示用にリサイズしています。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© このページは紹介用の非公式サイトです。</p>
+    <p>公式情報は <a href="https://www.acmilan.com/" target="_blank" rel="noopener">AC Milan 公式サイト</a> をご覧ください。</p>
+  </footer>
+</body>
+</html>
